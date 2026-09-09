@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rustam | Software Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo"><span>&lt;</span>rustam<span>/&gt;</span></a>
+      <nav class="nav-links">
+        <a href="#about">Men haqimda</a>
+        <a href="#skills">Ko'nikmalar</a>
+        <a href="#projects">Loyihalar</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+      <button id="themeToggle" class="theme-btn" aria-label="Mavzuni almashtirish">
+        <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="badge">Backend & Systems Specialist</div>
+      <h1 class="title">Murakkab g'oyalarni <br><span class="accent-text">toza arxitekturaga</span> aylantiraman.</h1>
+      <p class="description">Tezkor API'lar, ishonchli ma'lumotlar bazasi loyihalash va kengaytiriluvchi backend yechimlar ustida ishlayman.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Loyihalarni ko'rish</a>
+        <a href="#contact" class="btn btn-secondary">Bog'lanish</a>
+      </div>
+    </section>
+
+    <section id="skills" class="container section">
+      <h2 class="section-title">Texnologik stak</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-cat">Backend Core</span>
+          <h3>Python / Go</h3>
+          <p>RESTful API, microservices va asinxron backend arxitekturasi.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-cat">Database</span>
+          <h3>PostgreSQL & Redis</h3>
+          <p>Relatsion ma'lumotlar modellash, indeksatsiya va keshlash tizimlari.</p>
+        </div>
+        <div class="skill-card">
+          <span class="skill-cat">Tools & DevOps</span>
+          <h3>Docker & Git</h3>
+          <p>Konteynerizatsiya, CI/CD pipeline asoslari va versiyalar boshqaruvi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <div class="projects-header">
+        <h2 class="section-title">Saralangan ishlar</h2>
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">Barchasi</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="system">Tizimlar</button>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card" data-category="backend">
+          <div class="project-content">
+            <span class="tag">REST API</span>
+            <h3>High-Load Billing Gateway</h3>
+            <p>To'lov tizimlari bilan integratsiyalashgan, tranzaksiyalar xavfsizligini ta'minlovchi asinxron servis.</p>
+            <ul class="tech-stack">
+              <li>FastAPI</li>
+              <li>PostgreSQL</li>
+              <li>Redis</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="system">
+          <div class="project-content">
+            <span class="tag">Tooling</span>
+            <h3>Log Analyzer Daemon</h3>
+            <p>Server loglarini real vaqt rejimida yig'uvchi va anomaliyalarni aniqlovchi yengil agent.</p>
+            <ul class="tech-stack">
+              <li>Go</li>
+              <li>Docker</li>
+              <li>Bash</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="backend">
+          <div class="project-content">
+            <span class="tag">Web Services</span>
+            <h3>Telegram Auth Microservice</h3>
+            <p>OAuth2 standartlariga mos, foydalanuvchilarni autentifikatsiya qilish uchun mustaqil avtorizatsiya servisi.</p>
+            <ul class="tech-stack">
+              <li>Python</li>
+              <li>JWT</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <div class="contact-box">
+        <h2>Keling, birgalikda ishlaymiz</h2>
+        <p>Yangi loyihalar, texnik muammolar yoki jamoada ishlash takliflari uchun ochiqman.</p>
+        <a href="mailto:contact@domain.uz" class="btn btn-primary">Xabar yuborish</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026. Barcha huquqlar himoyalangan.</p>
+      <div class="socials">
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://t.me" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
